@@ -1,5 +1,5 @@
-/* Estilos CSS para TravelExpo - Feria Internacional de Viajes */
-/* Paleta de colores: azules y blancos */
+/* Estilos CSS para TravelBIRTLH 2025 - Feria Internacional de Viajes */
+/* Colores BIRTLH 009AC6, 78C5E0, B9DAE9 ,D2E2E9
 
 /* Reset básico y configuración general */
 * {
@@ -11,13 +11,13 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #1e3a5f;
+    color: #004A61;
     background-color: #f0f4f8;
 }
 
 /* Encabezado principal */
 header {
-    background: linear-gradient(135deg, #1e3a5f, #2563eb);
+    background-color: #009AC6;
     color: white;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -37,14 +37,16 @@ h1 {
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    opacity: 0.9;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 /* Navegación */
 nav {
-    background-color: #1e3a5f;
+	font-weight: bold;
+    background-color: #009AC6;
     padding: 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -55,6 +57,7 @@ nav {
 }
 
 nav ul {
+	margin-top: 1rem;
     list-style: none;
     display: flex;
     justify-content: center;
@@ -67,21 +70,22 @@ nav li {
 
 nav a {
     display: block;
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 15px 25px;
-    transition: background-color 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 
 nav a:hover {
-    background-color: #2563eb;
-    border-bottom-color: #3b82f6;
+	text-decoration: none;
+    background-color: #78C5E0;
+    border-bottom-color: white;
+	color: white;
 }
 
 nav a.active {
-    background-color: #2563eb;
-    border-bottom-color: #60a5fa;
+    background-color: #B9DAE9;
+    border-bottom-color: white;
 }
 
 /* Contenido principal */
@@ -100,15 +104,15 @@ main {
 
 /* Títulos */
 h2 {
-    color: #1e3a5f;
+    color: #009AC6;
     font-size: 2rem;
     margin-bottom: 1rem;
-    border-bottom: 3px solid #2563eb;
+    border-bottom: 3px solid #009AC6;
     padding-bottom: 0.5rem;
 }
 
 h3 {
-    color: #2563eb;
+    color: #009AC6;
     font-size: 1.5rem;
     margin: 1.5rem 0 1rem 0;
 }
@@ -121,25 +125,31 @@ p {
 }
 
 /* Listas */
-ul, ol {
-    margin: 1rem 0 1rem 2rem;
+ul {
+	list-style: none;
+}
+
+ol {
+	margin: 1rem 0 1rem 2rem;
+	list-style: none;
 }
 
 li {
     margin-bottom: 0.5rem;
     line-height: 1.6;
+	text-decoration: none;
 }
 
 /* Listas especiales para destacar información */
 .lista-destacada {
-    background-color: #eff6ff;
+    background-color: #B9DAE9;
     padding: 1rem;
-    border-radius: 5px;
-    border-left: 4px solid #2563eb;
+    border-radius: 7px;
 }
 
 .lista-destacada li {
     margin-bottom: 0.8rem;
+	margin-left: 1rem;
 }
 
 /* Tablas */
@@ -158,19 +168,15 @@ th, td {
 }
 
 th {
-    background: linear-gradient(135deg, #1e3a5f, #2563eb);
+    background-color: #009AC6;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9rem;
 }
 
-tr:hover {
-    background-color: #f0f9ff;
-}
-
 tr:nth-child(even) {
-    background-color: #eff6ff;
+    background-color: #D2E2E9;
 }
 
 /* Imágenes */
@@ -203,32 +209,32 @@ img {
 
 /* Enlaces */
 a {
-    color: #2563eb;
+    color: black;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #1d4ed8;
+    color: #009AC6;
     text-decoration: underline;
 }
 
 .enlace-externo {
-    color: #1e40af;
+    color: black;
     font-weight: bold;
 }
 
 .enlace-externo:hover {
-    color: #1e3a8a;
+    color: #009AC6;
 }
 
 /* Formularios */
 form {
-    background-color: #eff6ff;
+    background-color: #D2E2E9;
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
-    border: 2px solid #bfdbfe;
+    border: 2px solid #009AC6;
 }
 
 .form-group {
@@ -239,7 +245,7 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #1e3a5f;
+    color: black;
 }
 
 input[type="text"],
@@ -249,20 +255,9 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #bfdbfe;
+    border: 2px solid #B9DAE9;
     border-radius: 5px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
 }
 
 textarea {
@@ -271,46 +266,43 @@ textarea {
 }
 
 button {
-    background: linear-gradient(135deg, #1e3a5f, #2563eb);
+    background: #009AC6;
     color: white;
     padding: 12px 30px;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Secciones especiales */
 .seccion-destacada {
-    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    background-color: #D2E2E9;
     padding: 2rem;
     border-radius: 10px;
     margin: 2rem 0;
-    border-left: 5px solid #2563eb;
 }
 
 .caja-informacion {
-    background-color: #eff6ff;
-    border: 2px solid #2563eb;
+    background-color: #D2E2E9;
+    border: 2px solid #009AC6;
     padding: 1.5rem;
     border-radius: 8px;
     margin: 1.5rem 0;
 }
 
 .caja-informacion h3 {
-    color: #1e3a5f;
+    color: #009AC6;
     margin-top: 0;
 }
 
 /* Pie de página */
 footer {
-    background-color: #1e3a5f;
+    background-color: #009AC6;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -321,6 +313,11 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.footer-text {
+	text-align: center;
 }
 
 .footer-links {
@@ -328,65 +325,10 @@ footer {
 }
 
 .footer-links a {
-    color: #dbeafe;
     margin: 0 15px;
     text-decoration: none;
 }
 
 .footer-links a:hover {
-    color: #60a5fa;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .subtitle {
-        font-size: 1rem;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav a {
-        text-align: center;
-        padding: 12px 20px;
-    }
-    
-    .content {
-        padding: 1rem;
-    }
-    
-    table {
-        font-size: 0.9rem;
-    }
-    
-    th, td {
-        padding: 8px;
-    }
-    
-    .galeria {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    
-    h2 {
-        font-size: 1.5rem;
-    }
-    
-    .content {
-        padding: 0.5rem;
-    }
-    
-    form {
-        padding: 1rem;
-    }
+    color: white;
 }
