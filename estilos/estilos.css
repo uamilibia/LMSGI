@@ -332,3 +332,57 @@ footer {
 .footer-links a:hover {
     color: white;
 }
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav a {
+        text-align: center;
+        padding: 12px 20px;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+    
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .content {
+        padding: 0.5rem;
+    }
+    
+    form {
+        padding: 1rem;
+    }
+}
