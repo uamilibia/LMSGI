@@ -1,1 +1,0 @@
-Un sitio Web público que contenga información coherente sobre una feria de viajes. Se valorará también, que dicho sitio se publique en alguna plataforma para acceso libre y publico a través de una URL en la que aparezca tu ID de usuario de BirtLH (por ejemplo, https://…xaurrutia…).
