@@ -1,160 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta content="charset=UTF-8" />
-    <title>Contacto - TravelBIRTLH 2025</title>
-    <meta name="description" content="Contacta con TravelBIRTLH 2025. Información de contacto, ubicación y formulario para consultas sobre la feria internacional de viajes." />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Contacto y Registro - BIRTLH ExpoViajes 2025</title>
+    <meta name="description" content="Formulario de registro y información de contacto para BIRTLH ExpoViajes 2025." />
     <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
 </head>
 <body>
-    <!-- Encabezado principal -->
     <header>
-        <div class="header-content">
-            <h1>TravelBIRTLH 2025</h1>
-            <p class="subtitle">Información de Contacto - Estamos Aquí para Ayudarte</p>
-        </div>
+        <h1>BIRTLH ExpoViajes 2025</h1>
+        <p><strong>18 de octubre de 2025 | 09:00 - 20:00 | BEC Bilbao Exhibition Centre</strong></p>
     </header>
 
-    <!-- Menú principal -->
+    <!-- Menú de navegación -->
     <nav>
-        <div class="nav-container">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="programa.html">Programa</a></li>
-                <li><a href="expositores.html">Expositores</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="programa.html">Programa</a></li>
+            <li><a href="expositores.html">Expositores</a></li>
+            <li><a href="informacion.html">Información Práctica</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
     </nav>
 
-    <!-- Contenido principal de contacto -->
+    <!-- Contenido principal con formulario y contacto -->
     <main>
-        <div class="content">
-            <h2>Información de Contacto</h2>
+        <section>
+            <h2>Registro de Visitantes</h2>
+            <p>
+                Regístrate gratuitamente para asistir a <strong>BIRTLH ExpoViajes 2025</strong>. 
+                El registro te permitirá acceder a ofertas exclusivas y recibir información 
+                actualizada sobre el evento.
+            </p>
             
-            <!-- Imagen de contacto -->
-            <img src="imagenes/centroinformacion.png" alt="Centro de información y atención al visitante de TravelBIRTLH 2025" class="imagen-centrada" />
-            
-            <p>¿Tienes preguntas sobre TravelBIRTLH 2025? Nuestro equipo está disponible para ayudarte con cualquier consulta relacionada con la feria, el programa de actividades, los expositores o los servicios disponibles.</p>
-
-            <!-- Información de contacto principal -->
-            <div class="seccion-destacada">
-                <h3>Datos de Contacto Principal</h3>
-                <ul class="lista-destacada">
-                    <li><strong>Teléfono Principal:</strong> +34 900 123 456</li>
-                    <li><strong>Email General:</strong> info@TravelBIRTLH2025.com</li>
-                    <li><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 - 18:00 horas</li>
-                </ul>
-            </div>
-
-            <!-- Ubicación del evento -->
-            <h3>Ubicación del Evento</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Concepto</th>
-                        <th>Información</th>
-                        <th>Detalles</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Sede</td>
-                        <td>BEC: Bilbao Exhibition Centre</td>
-                        <td>Pabellones 1, 2 y 3</td>
-                    </tr>
-                    <tr>
-                        <td>Dirección</td>
-                        <td> Azkue Kalea, 1</td>
-                        <td>48902 San Vicente de Barakaldo, Bizkaia</td>
-                    </tr>
-                    <tr>
-                        <td>Metro</td>
-                        <td>Línea 2 - Estación Ansio</td>
-                        <td>2 minutos caminando</td>
-                    </tr>
-                    <tr>
-                        <td>Autobús</td>
-                        <td>Línea 3136 Bizkaibus</td>
-                        <td>Parada Ansio</td>
-                    </tr>
-                    <tr>
-                        <td>Parking</td>
-                        <td>4,000 plazas disponibles</td>
-                        <td>€18/día - Reserva recomendada</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <!-- Formulario de contacto -->
-            <h3>Formulario de Contacto</h3>
-            <p>Utiliza este formulario para enviarnos tus consultas. Responderemos en un plazo máximo de 24 horas.</p>
-            
-            <form action="mailto:www.example.com" method="get">
+            <!-- Formulario de registro con 4 campos requeridos -->
+            <form action="mailto:registro@birtlhexpoviajes.com" method="post" enctype="text/plain">
+                <h3>Formulario de Registro</h3>
+                
                 <div class="form-group">
-                    <label for="nombre">Nombre Completo *</label>
+                    <label for="nombre">Nombre completo *</label>
                     <input type="text" id="nombre" name="nombre" required="required" />
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Correo Electrónico *</label>
+                    <label for="email">Correo electrónico *</label>
                     <input type="email" id="email" name="email" required="required" />
-                </div>
-                              
-                <div class="form-group">
-                    <label for="tipo_consulta">Tipo de Consulta *</label>
-                    <select id="tipo_consulta" name="tipo_consulta" required="required">
-                        <option value="">Selecciona una opción</option>
-                        <option value="informacion_general">Información General</option>
-                        <option value="registro_visitante">Registro como Visitante</option>
-                        <option value="participacion_expositor">Participación como Expositor</option>
-                        <option value="programa_conferencias">Programa de Conferencias</option>
-                        <option value="medios_comunicacion">Medios de Comunicación</option>
-                        <option value="servicios_tecnicos">Servicios Técnicos</option>
-                        <option value="otros">Otros</option>
-                    </select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" required="required" placeholder="Describe tu consulta con el mayor detalle posible..."></textarea>
+                    <label for="telefono">Teléfono de contacto *</label>
+                    <input type="tel" id="telefono" name="telefono" required="required" />
                 </div>
-                                             
-                <button type="submit" method="post">Enviar Consulta</button>
+                
+                <div class="form-group">
+                    <label for="interes">Tipo de interés *</label>
+                    <select id="interes" name="interes" required="required">
+                        <option value="">Selecciona una opción</option>
+                        <option value="turista">Turista individual</option>
+                        <option value="familia">Viajes en familia</option>
+                        <option value="profesional">Profesional del sector</option>
+                        <option value="empresa">Empresa/Agencia</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <button type="submit">Enviar Registro</button>
             </form>
-			
-			<!-- Política de privacidad -->
-            <div class="caja-informacion">
-                <h3>Política de Privacidad</h3>
-                <p>Los datos proporcionados a través de este formulario serán utilizados exclusivamente para responder a tu consulta y, si lo autorizas, para enviarte información sobre futuras ediciones de TravelExpo.</p>
-                <p><strong>Cumplimos con el RGPD:</strong> Tus datos están protegidos según la normativa europea de protección de datos.</p>
-            </div>
             
-            <!-- Enlaces útiles -->
-            <h3>Enlaces Útiles</h3>
-            <ul>
-                <li><a href="https://www.renfe.com/" class="enlace-externo" target="_blank">Renfe - Trenes y Cercanías</a></li>
-                <li><a href="https://www.metrobilbao.eus/" class="enlace-externo" target="_blank">Metro de Bilbao - Horarios y Rutas</a></li>
-                <li><a href="https://www.bizkaia.eus/es/web/bizkaibus" class="enlace-externo" target="_blank">Bizkaibus  - Autobuses Urbanos</a></li>
-                <li><a href="https://www.aena.es/es/bilbao.html" class="enlace-externo" target="_blank">Aeropuerto de Bilbao</a></li>
-                <li><a href="https://www.booking.com/" class="enlace-externo" target="_blank">Hoteles Cercanos - Booking.com</a></li>
-            </ul>
+            <div class="destacado">
+                <p><strong>Nota:</strong> Al enviar este formulario se abrirá tu cliente de correo predeterminado. 
+                Los campos marcados con * son obligatorios. Recibirás confirmación en un plazo de 24 horas.</p>
+            </div>
+        </section>
 
-        </div>
+        <!-- Sección con información de contacto -->
+        <section>
+            <h2>Información de Contacto</h2>
+            <h3>Organización del evento:</h3>
+            <table>
+                <tr>
+                    <th>Concepto</th>
+                    <th>Información</th>
+                </tr>
+                <tr>
+                    <td>Dirección</td>
+                    <td>Calle Gran Vía, 45, 3º B<br />48011 Bilbao, Bizkaia</td>
+                </tr>
+                <tr>
+                    <td>Teléfono principal</td>
+                    <td>+34 944 123 456</td>
+                </tr>
+                <tr>
+                    <td>Email general</td>
+                    <td>info@birtlhexpoviajes.com</td>
+                </tr>
+                <tr>
+                    <td>Horario de atención</td>
+                    <td>Lunes a viernes: 09:00 - 18:00</td>
+                </tr>
+            </table>
+        </section>
     </main>
 
     <!-- Pie de página -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="index.html">Inicio</a>
-                <a href="destinos.html">Destinos</a>
-                <a href="programa.html">Programa</a>
-                <a href="expositores.html">Expositores</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <p class="footer-text">&copy; TravelBIRTLH 2025. Todos los derechos reservados. | Feria Internacional de Viajes</p>
+        <p>&copy; 2025 BIRTLH ExpoViajes. Todos los derechos reservados.</p>
+        <p>Organizado por BIRTLH Events | Email: info@birtlhexpoviajes.com | Tel: +34 944 123 456</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
         </div>
     </footer>
 </body>
